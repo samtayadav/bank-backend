@@ -7,3 +7,5 @@ MONGO_URL = os.getenv("MONGO_URL")
 client = AsyncIOMotorClient(MONGO_URL)
 db = client.bankdb
 collection = db.accounts
+users_collection = db.users
+sessions_collection = db.sessions
